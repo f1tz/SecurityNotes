@@ -79,7 +79,9 @@
 
 - 当我们通过dump hash拿到了NTLM Hash后，我通常首先尝试能不能直接在线破解。常用的破解网站：
 
-  https://www.objectif-securite.ch/en/ophcrack.php/
+  http://www.chamd5.org/
+
+  https://www.objectif-securite.ch/en/ophcrack.php
   
   http://www.cmd5.com/
   
