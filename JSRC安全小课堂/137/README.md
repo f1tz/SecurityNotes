@@ -1,6 +1,6 @@
 # JSRC安全小课堂 第137期 
 
-本期的主题是:浅谈内网渗透中的Window认证
+本期的主题是:浅谈内网渗透中的Windows认证
 
 本期的讲师是来自ChaMd5安全团队的ShadowGlint，擅长代码审计和渗透测试
 
@@ -8,7 +8,7 @@
 
 ## 议题一：Windows的认证方式主要有哪些？
 
-##### 讲师：
+**讲师**：
 - Windows的认证方式主要有 **NTLM认证**、**Kerberos认证** 两种。同时，**Windows Access Token**记录着某用户的SID、组ID、Session、及权限等信息，也起到了权限认证的作用。
 
    - 其中，NTLM认证主要有本地认证和网络认证两种方式。本地登录时，用户的密码存储在%SystemRoot%\system32\config\sam这个文件里。当用户输入密码进行本地认证的过程中，所有的操作都是在本地进行的。他其实就是将用户输入的密码转换为NTLM Hash，然后与SAM中的NTLM Hash进行比较。而网络认证则是基于一种Challenge/Response认证机制的认证模式。他的认证过程我们下边会详细讲。
